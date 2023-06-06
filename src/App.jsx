@@ -11,46 +11,35 @@ import Toolbar from "@mui/material/Toolbar";
 import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import PhotoCamera from "@mui/icons-material/PhotoCamera";
+import deeMedalImage from "./images/dee-medal.jpg"; 
+import dianaAndYoel from "./images/diana-and-yoel.jpg"; 
+import karateWorkshopEveryone from "./images/karate-workshop-everyone.jpg"; 
+import theGirlsTeam from "./images/the-girls-team.jpg"; 
+
+
 
 const imageUrls = [
   {
-    imageUrl: "https://res.cloudinary.com/iujg6ghfdf/image/upload/v1685999294/20230121_141748_eqsaud.jpg",
+    imageUrl: deeMedalImage,
     heading: "An Overjoyed Diana",
     description: "2nd Place in individual Kata Ladies Ü30 🥈 and 1st place in Team-Kata-Mixed Ü30 🥇",
   },
   {
-    imageUrl: "https://res.cloudinary.com/iujg6ghfdf/image/upload/v1686046452/20220630_210057_xoeblf.jpg",
+    imageUrl: dianaAndYoel,
     heading: "Diana and Yoel Benaroch",
     description: "My lifelong trainer from Israel 🥋🥊"
   },
   {
-    imageUrl: "https://res.cloudinary.com/iujg6ghfdf/image/upload/v1686046453/20230422_134910_n5n6bp.jpg",
+    imageUrl: karateWorkshopEveryone,
     heading: "Karate Workshop in Hüttenweg, Berlin",
     description: "A Dan preparation workshop which takes place once a month, led by F.Asner, B.Hartlieb & G. Dirks 🥋"
   },
   {
-imageUrl: "https://res.cloudinary.com/iujg6ghfdf/image/upload/v1686046451/IMG-20221203-WA0019_fgk74e.jpg",
+imageUrl: theGirlsTeam,
 heading: "Four very proud ladies Kata-Masterclass Ü30",
 description: "Sandra - 1st 🥇, Diana - 2nd 🥈, Tetiana & Anika - 3rd 🥉"
   },
   
-  // "https://res.cloudinary.com/iujg6ghfdf/image/upload/v1686046451/20230117_205013_snqpt2.jpg",
-  // "https://res.cloudinary.com/iujg6ghfdf/image/upload/v1686046452/20230502_192748_ycpunv.jpg",
-  // "https://res.cloudinary.com/iujg6ghfdf/image/upload/v1686046448/IMG-20220903-WA0015_g9gfhh.jpg",
-  // "https://res.cloudinary.com/iujg6ghfdf/image/upload/v1686046445/IMG-20220903-WA0011_yxnltp.jpg",
-  // "https://res.cloudinary.com/iujg6ghfdf/image/upload/v1686046442/20230314_191725_1_vn2www.jpg",
-  // "https://res.cloudinary.com/iujg6ghfdf/image/upload/v1686046442/20230421_100802_uodquv.jpg",
-  // "https://res.cloudinary.com/iujg6ghfdf/image/upload/v1686046441/FB_IMG_1670085265368_dpmlvj.jpg",
-  // "https://res.cloudinary.com/iujg6ghfdf/image/upload/v1686046438/FB_IMG_1670084685076_mbr5va.jpg",
-  // "https://res.cloudinary.com/iujg6ghfdf/image/upload/v1686046437/IMG-20220528-WA0031_kqqn9t.jpg",
-  // "https://res.cloudinary.com/iujg6ghfdf/image/upload/v1686046433/255192578_10158945255093863_5528351753006473325_n_dhw8tr.jpg",
-  // "https://res.cloudinary.com/iujg6ghfdf/image/upload/v1686046425/20230117_191718_hlxrb1.jpg",
-  // "https://res.cloudinary.com/iujg6ghfdf/image/upload/v1686046422/20220618_155901_c5gtll.jpg",
-  // "https://res.cloudinary.com/iujg6ghfdf/image/upload/v1686046421/20220625_161350_k6u33i.jpg",
-  // "https://res.cloudinary.com/iujg6ghfdf/image/upload/v1686046417/20220527_095206_ect02t.jpg",
-  // "https://res.cloudinary.com/iujg6ghfdf/image/upload/v1686046408/20220402_170335_001_yvd1cg.jpg",
-  // "https://res.cloudinary.com/iujg6ghfdf/image/upload/v1686046402/20220403_095610_e15slr.jpg",
-  // "https://res.cloudinary.com/iujg6ghfdf/image/upload/v1686046408/20220524_191920_oherma.jpg"
 ];
 
 function App() {
@@ -87,8 +76,9 @@ function App() {
               paragraph
               style={{ marginTop: "20px" }}
             >
-              Hey everyone, this is a photo album of my biggest passion, which
-              is Karate! Have a sneak peek into my world!
+              Hey everyone!<br/>
+              This is a photo album of my biggest passion. 💗<br />
+              Have a sneak peek into my world!
             </Typography>
             <div style={{ marginTop: "30px" }}>
               <Grid container spacing={4} justifyContent="center">
