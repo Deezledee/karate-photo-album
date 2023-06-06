@@ -137,11 +137,11 @@ function App() {
       </AppBar>
       <main>
         <div>
-          <Container maxWidth="sm" style={{ textAlign: "center" }}>
+          <Container maxWidth="sm" style={{ textAlign: "center", display: "flex", flexDirection: "column" }}>
           <img
             src={shotokanSymbol}
             alt="shotokan-symbol"
-            width="500"
+            width="100%"
             align="center"
           />
             <Typography
