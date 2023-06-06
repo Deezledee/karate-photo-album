@@ -11,10 +11,33 @@ import Toolbar from "@mui/material/Toolbar";
 import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import PhotoCamera from "@mui/icons-material/PhotoCamera";
-import deeMedalImage from "./images/dee-medal.jpg"; 
-import dianaAndYoel from "./images/diana-and-yoel.jpg"; 
-import karateWorkshopEveryone from "./images/karate-workshop-everyone.jpg"; 
-import theGirlsTeam from "./images/the-girls-team.jpg"; 
+import deeMedalImage from "./images/dee-medal.jpg";
+import dianaAndYoel from "./images/diana-and-yoel.jpg";
+import karateWorkshopEveryone from "./images/karate-workshop-everyone.jpg";
+import theGirlsTeam from "./images/the-girls-team.jpg";
+import butFirstClean from "./images/but-first-clean.jpg";
+import dianaGinaPiotr from "./images/diana-gina-piotr.jpg";
+import wholeSCB from "./images/whole-scb.jpg";
+import dianaAndPiotr from "./images/diana-piotr.jpg";
+import myHappyPlace from "./images/my-happy-place.jpg";
+import dianaAndNaka from "./images/diana-and-naka.jpg";
+import dianaAndIlija from "./images/diana-ilija-jorga.jpg";
+import dianaStateChampionship from "./images/diana-state-championship.jpg";
+import dianaKumite from "./images/diana-kumite.jpg";
+import scbTraining from "./images/scb-training.jpg";
+import shotokanSymbol from "./images/shotokan-symbol.png";
+import deeCartoon from "./images/dee-cartoon.png";
+import teamBerlinChampionship from "./images/team-berlin-championship.jpg";
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -22,28 +45,83 @@ const imageUrls = [
   {
     imageUrl: deeMedalImage,
     heading: "An Overjoyed Diana",
-    description: "2nd Place in individual Kata Ladies Ü30 🥈 and 1st place in Team-Kata-Mixed Ü30 🥇",
+    description:
+      "2nd Place in individual Kata Ladies Ü30 🥈 and 1st place in Team-Kata-Mixed Ü30 🥇",
   },
   {
     imageUrl: dianaAndYoel,
     heading: "Diana and Yoel Benaroch",
-    description: "My lifelong trainer from Israel 🥋🥊"
+    description: "My lifelong trainer from Israel 🥋🥊",
   },
   {
     imageUrl: karateWorkshopEveryone,
     heading: "Karate Workshop in Hüttenweg, Berlin",
-    description: "A Dan preparation workshop which takes place once a month, led by F.Asner, B.Hartlieb & G. Dirks 🥋"
+    description:
+      "A Dan preparation workshop which takes place once a month, led by F.Asner, B.Hartlieb & G. Dirks 🥋 💪",
   },
   {
-imageUrl: theGirlsTeam,
-heading: "Four very proud ladies Kata-Masterclass Ü30",
-description: "Sandra - 1st 🥇, Diana - 2nd 🥈, Tetiana & Anika - 3rd 🥉"
+    imageUrl: theGirlsTeam,
+    heading: "Four very proud ladies Kata-Masterclass Ü30",
+    description: "Sandra - 1st 🥇, Diana - 2nd 🥈, Tetiana & Anika - 3rd 🥉",
   },
-  
+  {
+    imageUrl: butFirstClean,
+    heading: "Diana and Mop",
+    description: "Gotta keep the Dojo tidy 🧹🫧",
+  },
+  {
+    imageUrl: dianaGinaPiotr,
+    heading: "Diana, Gina & Piotr",
+    description: "Our coach, Piotr (6th Dan), has been training us for our first tournament 🥷",
+  },
+  {
+    imageUrl: wholeSCB,
+    heading: "The natural Shotokan Club Berlin team",
+    description: "The way more experienced ones. 💪 And us...😆",
+  },
+  {
+    imageUrl: dianaAndPiotr,
+    heading: "My mentor & myself at my first tournament (2022) 🥷🥉",
+    description: "I'm truly thankful he exists",
+  },
+  {
+    imageUrl: myHappyPlace,
+    heading: "Alive!",
+    description: "Me before every training (in particular Tue's Kata-Training) 💪💃",
+  },
+  {
+    imageUrl: dianaAndNaka,
+    heading: "Sensei Tatsuya Naka & myself at the Kata-Special Seminar (2022)",
+    description: "This genius guy has taught us so many techniques from his lifelong experience. 📚",
+  },
+  {
+    imageUrl: dianaAndIlija,
+    heading: "Sensei Ilija Jorga & myself at the Fudokan Seminar (2022)",
+    description: "We learned many Fudokan techniques led by the brothers - Vladimir & Ilija Jorga (I remember it was also the warmest, sunniest day in June) 📘☀️",
+  },
+  {
+    imageUrl: dianaStateChampionship,
+    heading: "Piotr, Diana, Caroline & Jarow (Erfurt, 2022)",
+    description: "So lucky to have participated in Germany's Karate Championship for the first time. 🥷",
+  },
+  {
+    imageUrl: dianaKumite,
+    heading: "Diana & teeth protector",
+    description: "One day I'll get better at Kumite...😅",
+  },
+  {
+    imageUrl: scbTraining,
+    heading: "Best Team Ever! 🥋",
+    description: "My teammates & myself at Dieter's training",
+  },
+  {
+    imageUrl: teamBerlinChampionship,
+    heading: "The big family of SCB 🥋",
+    description: "Our very excited team at the Berlin Championship of 2023 🥷",
+  },
 ];
 
 function App() {
-
   const handleViewButtonClick = (imageUrl) => {
     window.open(imageUrl, "_blank");
   };
@@ -59,7 +137,13 @@ function App() {
       </AppBar>
       <main>
         <div>
-          <Container maxWidth="sm">
+          <Container maxWidth="sm" style={{ textAlign: "center" }}>
+          <img
+            src={shotokanSymbol}
+            alt="shotokan-symbol"
+            width="500"
+            align="center"
+          />
             <Typography
               variant="h2"
               align="center"
@@ -76,8 +160,10 @@ function App() {
               paragraph
               style={{ marginTop: "20px" }}
             >
-              Hey everyone!<br/>
-              This is a photo album of my biggest passion. 💗<br />
+              Hey everyone!
+              <br />
+              This is a photo album of my biggest passion. 💗
+              <br />
               Have a sneak peek into my world!
             </Typography>
             <div style={{ marginTop: "30px" }}>
@@ -91,7 +177,14 @@ function App() {
                       borderColor: "#FFFFFF",
                     }}
                   >
-                   <a href="https://dianadeekalstein.com" target="_blank" style={{textDecoration: "none", color: "#FFFFFF"}} rel="noreferrer">Portfolio</a>
+                    <a
+                      href="https://dianadeekalstein.com"
+                      target="_blank"
+                      style={{ textDecoration: "none", color: "#FFFFFF" }}
+                      rel="noreferrer"
+                    >
+                      Portfolio
+                    </a>
                   </Button>
                 </Grid>
                 <Grid item>
@@ -100,11 +193,42 @@ function App() {
                     style={{
                       backgroundColor: "#FFFFFF",
                       color: "#5CB820",
-                      borderColor: "#5CB820",
+                      borderColor: "#5CB820"
                     }}
                   >
-               <a href="https://www.linkedin.com/in/diana-kalstein/" target="_blank" style={{textDecoration: "none", backgroundColor: "#FFFFFF", color: "#5CB820", borderColor: "#5CB820",}} rel="noreferrer">Linkedin</a>
+                    <a
+                      href="https://www.linkedin.com/in/diana-kalstein/"
+                      target="_blank"
+                      style={{
+                        textDecoration: "none",
+                        backgroundColor: "#FFFFFF",
+                        color: "#5CB820",
+                        borderColor: "#5CB820",
+                      }}
+                      rel="noreferrer"
+                    >
+                      Linkedin
+                    </a>
+                  </Button>
+                </Grid>
+                <Grid item>
+                  <Button
+                    variant="contained"
+                    style={{
+                      backgroundColor: "#5CB820",
+                      color: "#FFFFFF",
+                      borderColor: "#5CB820",
 
+                    }}
+                  >
+                    <a
+                      href="https://shotokan-club-berlin.de/"
+                      target="_blank"
+                      style={{ textDecoration: "none", color: "#FFFFFF", backgroundColor: "#5CB820" }}
+                      rel="noreferrer"
+                    >
+                      Join SCB 💪
+                    </a>
                   </Button>
                 </Grid>
               </Grid>
@@ -112,7 +236,7 @@ function App() {
           </Container>
         </div>
         <Container maxWidth="md">
-          <Grid container spacing={4} style={{ marginTop: "30px" }}>
+          <Grid container spacing={4} style={{ marginTop: "5px" }}>
             {imageUrls.map((imageData, index) => (
               <Grid item key={index} xs={12} sm={6} md={4}>
                 <Card
@@ -121,7 +245,6 @@ function App() {
                     display: "flex",
                     flexDirection: "column",
                     backgroundColor: "#FFFFFF",
-                    
                   }}
                 >
                   <CardMedia
@@ -138,17 +261,22 @@ function App() {
                       justifyContent: "center",
                     }}
                   >
-                    <Typography variant="h5" style={{ textAlign: "center"}} gutterBottom>
+                    <Typography
+                      variant="h5"
+                      style={{ textAlign: "center" }}
+                      gutterBottom
+                    >
                       {imageData.heading}
                     </Typography>
-                    <Typography style={{ textAlign: "center"}}>{imageData.description}</Typography>
+                    <Typography style={{ textAlign: "center" }}>
+                      {imageData.description}
+                    </Typography>
                   </CardContent>
                   <CardActions style={{ justifyContent: "center" }}>
                     <Button
                       size="small"
                       style={{ color: "#FFFFFF", backgroundColor: "#000000" }}
                       onClick={() => handleViewButtonClick(imageData.imageUrl)}
-
                     >
                       View
                     </Button>
@@ -160,20 +288,56 @@ function App() {
         </Container>
       </main>
       <footer
-  style={{
-    color: "#FFFFFF",
-    backgroundColor: "#5CB820",
-    padding: "20px 0",
-    margin: "30px 16px",
-    textAlign: "center",
-  }}
->
-  <Typography variant="h6" gutterBottom style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
-    Coded by Diana (Dee) Kalstein &copy;
-    <img src="https://res.cloudinary.com/iujg6ghfdf/image/upload/v1685372646/movie-project/tmykig0rrsg1fyl4jznc.png" alt="diana" width="50" style={{ marginLeft: '5px' }} />
-  </Typography>
-</footer>
-
+        style={{
+          color: "#FFFFFF",
+          backgroundColor: "#5CB820",
+          padding: "20px 0",
+          margin: "30px 16px",
+          textAlign: "center",
+        }}
+      >
+        <Typography
+          variant="h6"
+          gutterBottom
+          style={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            flexWrap: "wrap",
+          }}
+        >
+          Coded by Diana (Dee) Kalstein &copy;
+          <img
+            src={deeCartoon}
+            alt="diana"
+            width="50"
+            style={{ marginLeft: "5px" }}
+          />
+          <span
+            style={{
+              backgroundColor: "#000000",
+              color: "#44AECB",
+              borderRadius: "4px",
+              padding: "2px 6px",
+              margin: "0 4px",
+            }}
+          >
+            ReactJS
+          </span>
+          &
+          <span
+            style={{
+              backgroundColor: "#18275D",
+              color: "#1163E9",
+              borderRadius: "4px",
+              padding: "2px 6px",
+              margin: "0 4px",
+            }}
+          >
+            Material-UI
+          </span>
+        </Typography>
+      </footer>
     </>
   );
 }
