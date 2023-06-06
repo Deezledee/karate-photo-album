@@ -28,18 +28,12 @@ import scbTraining from "./images/scb-training.jpg";
 import shotokanSymbol from "./images/shotokan-symbol.png";
 import deeCartoon from "./images/dee-cartoon.png";
 import teamBerlinChampionship from "./images/team-berlin-championship.jpg";
-
-
-
-
-
-
-
-
-
-
-
-
+import dianaTekkiSandan from "./images/diana-tekki-sandan.jpg";
+import dianaAndTetiana from "./images/diana-tetiana.jpg";
+import dianaGinaTetiana from "./images/diana-gina-tetiana.jpg";
+import martinDianaNikos from "./images/martin-diana-nikos.jpg";
+import unsu from "./images/unsu.jpg";
+import nikosDianaTetiana from "./images/nikos-diana-tetiana.jpg";
 
 const imageUrls = [
   {
@@ -72,7 +66,8 @@ const imageUrls = [
   {
     imageUrl: dianaGinaPiotr,
     heading: "Diana, Gina & Piotr",
-    description: "Our coach, Piotr (6th Dan), has been training us for our first tournament 🥷",
+    description:
+      "Our coach, Piotr (6th Dan), has been training us for our first tournament 🥷",
   },
   {
     imageUrl: wholeSCB,
@@ -87,22 +82,26 @@ const imageUrls = [
   {
     imageUrl: myHappyPlace,
     heading: "Alive!",
-    description: "Me before every training (in particular Tue's Kata-Training) 💪💃",
+    description:
+      "Me before every training (in particular Tue's Kata-Training) 💪💃",
   },
   {
     imageUrl: dianaAndNaka,
     heading: "Sensei Tatsuya Naka & myself at the Kata-Special Seminar (2022)",
-    description: "This genius guy has taught us so many techniques from his lifelong experience. 📚",
+    description:
+      "This genius guy has taught us so many techniques from his lifelong experience. 📚",
   },
   {
     imageUrl: dianaAndIlija,
     heading: "Sensei Ilija Jorga & myself at the Fudokan Seminar (2022)",
-    description: "We learned many Fudokan techniques led by the brothers - Vladimir & Ilija Jorga (I remember it was also the warmest, sunniest day in June) 📘☀️",
+    description:
+      "We learned many Fudokan techniques led by the brothers - Vladimir & Ilija Jorga (I remember it was also the warmest, sunniest day in June) 📘☀️",
   },
   {
     imageUrl: dianaStateChampionship,
     heading: "Piotr, Diana, Caroline & Jarow (Erfurt, 2022)",
-    description: "So lucky to have participated in Germany's Karate Championship for the first time. 🥷",
+    description:
+      "So lucky to have participated in Germany's Karate Championship for the first time. 🥷",
   },
   {
     imageUrl: dianaKumite,
@@ -118,6 +117,39 @@ const imageUrls = [
     imageUrl: teamBerlinChampionship,
     heading: "The big family of SCB 🥋",
     description: "Our very excited team at the Berlin Championship of 2023 🥷",
+  },
+  {
+    imageUrl: dianaTekkiSandan,
+    heading: "Diana in Tekki-Sandan",
+    description: "One of my favourite Kata-routines 🥋",
+  },
+  {
+    imageUrl: dianaAndTetiana,
+    heading: "Diana & Tetiana",
+    description: "Trying to be goofy in a painful way. 🤪",
+  },
+  {
+    imageUrl: dianaGinaTetiana,
+    heading: "Gina, Myself & Tetiana at the Shotokan-Cup (2022)",
+    description:
+      "After training so hard, we managed to pull off the Bassai-Sho Team-Kata. 🏆🥇",
+  },
+  {
+    imageUrl: martinDianaNikos,
+    heading: "Martin (1st Dan), Myself & Nikos (2nd Dan) - Dan Exam (2022)",
+    description:
+      "It's been a mentally draining experience, but nonetheless fun, and at the end we achieved our Dans! 💪",
+  },
+  {
+    imageUrl: unsu,
+    heading: "Kata-Special Seminar (Magdeburg, 2022)",
+    description: "Learning Unsu-Kata to its core with Sensei Naka. 🦘",
+  },
+  {
+    imageUrl: nikosDianaTetiana,
+    heading: "Nikos, Myself & Tetiana (Berlin's Championship, 2023)",
+    description:
+      "Podium slay after gaining our 2nd place at the Team-Kata-Mixed Ü30 🥈",
   },
 ];
 
@@ -137,13 +169,20 @@ function App() {
       </AppBar>
       <main>
         <div>
-          <Container maxWidth="sm" style={{ textAlign: "center", display: "flex", flexDirection: "column" }}>
-          <img
-            src={shotokanSymbol}
-            alt="shotokan-symbol"
-            width="100%"
-            align="center"
-          />
+          <Container
+            maxWidth="sm"
+            style={{
+              textAlign: "center",
+              display: "flex",
+              flexDirection: "column",
+            }}
+          >
+            <img
+              src={shotokanSymbol}
+              alt="shotokan-symbol"
+              width="100%"
+              align="center"
+            />
             <Typography
               variant="h2"
               align="center"
@@ -193,7 +232,7 @@ function App() {
                     style={{
                       backgroundColor: "#FFFFFF",
                       color: "#5CB820",
-                      borderColor: "#5CB820"
+                      borderColor: "#5CB820",
                     }}
                   >
                     <a
@@ -218,13 +257,16 @@ function App() {
                       backgroundColor: "#5CB820",
                       color: "#FFFFFF",
                       borderColor: "#5CB820",
-
                     }}
                   >
                     <a
                       href="https://shotokan-club-berlin.de/"
                       target="_blank"
-                      style={{ textDecoration: "none", color: "#FFFFFF", backgroundColor: "#5CB820" }}
+                      style={{
+                        textDecoration: "none",
+                        color: "#FFFFFF",
+                        backgroundColor: "#5CB820",
+                      }}
                       rel="noreferrer"
                     >
                       Join SCB 💪
