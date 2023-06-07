@@ -355,6 +355,8 @@ function App() {
             width="50"
             style={{ marginLeft: "5px" }}
           />
+          <div>
+          using
           <span
             style={{
               backgroundColor: "#000000",
@@ -378,6 +380,7 @@ function App() {
           >
             Material-UI
           </span>
+          </div>
         </Typography>
       </footer>
     </>
