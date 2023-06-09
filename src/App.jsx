@@ -34,6 +34,8 @@ import dianaGinaTetiana from "./images/diana-gina-tetiana.jpg";
 import martinDianaNikos from "./images/martin-diana-nikos.jpg";
 import unsu from "./images/unsu.jpg";
 import nikosDianaTetiana from "./images/nikos-diana-tetiana.jpg";
+import teamTraining from "./images/team-training.jpg";
+
 
 const imageUrls = [
   {
@@ -151,6 +153,11 @@ const imageUrls = [
     description:
       "Podium slay after gaining our 2nd place at the Team-Kata-Mixed Ü30 🥈",
   },
+  {
+    imageUrl: teamTraining,
+    heading: "Team Training. 💪",
+    description: "A bunch of proud SCB members on the Judo mattresses. 🟨⬛",
+  }
 ];
 
 function App() {
